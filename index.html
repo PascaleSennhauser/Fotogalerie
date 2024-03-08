@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Photos</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png" id="favicon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <script src="./script.js"></script>
+</head>
+<body onload="render()">
+    <div class="height">
+        
+        <!-- header -->
+
+        <header>
+            <div class="section-header">
+                <img class="header-logo" src="./img/logo.png">
+                <div class="icons-header">
+                    <div class="question-btn" onclick="openPopUpQuestion()">
+                        <img class="question-icon" src="./img/question-icon.svg">
+                    </div>
+                    <div class="refresh-btn" onclick="refresh()">
+                        <img class="refresh-icon" src="./img/refresh-icon.svg">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- main-section -->
+
+        <section class="main">
+            <div class="title" id="titleBox">
+                <h1>Dreamy landscape</h1>
+            </div>
+            <div class="img-container" id="img-container">
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer>
+            <div class="footer-max">
+                <span>Pascale Sennhauser</span>
+                <div class="impressum-datenschutz-container">
+                    <a href="impressum.html" class="footer-link">Impressum</a> | 
+                    <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <!-- Pop-up photoBig -->
+
+    <div class="pop-up-photoBig pop-up-none" id="pop-up-photoBig">
+        <div class="header-photoBig">
+            <div class="btn-photoBig-header" onclick="closePopUpBigPhoto()">
+                <img class="close-btn-photoBig" src="./img/close-icon.svg">
+            </div>
+            <div class="diashow">
+                <div class="btn-diashow" id="btn-diashow" onclick="startDiashow()">
+                    <img class="diashow-icon" src="./img/diashow-icon.png">
+                </div>
+                <div class="btn-pause" onclick="pauseDiashow()">
+                    <img class="pause-icon" src="./img/pause-solid.svg">
+                </div>
+            </div>
+        </div>
+        <div class="left-right">
+            <div class="btn-left" onclick="left()">
+                <img src="./img/left-icon.svg" class="left-icon">
+            </div>
+            <div class="btn-right" onclick="right()">
+                <img src="./img/right-icon.svg" class="right-icon">
+            </div>
+        </div>
+        <div class="photoBig" id="photoBig"></div>
+    </div>
+
+    <!-- Pop-up question -->
+
+    <div class="pop-up-question pop-up-none" id="pop-up-question">
+        <div class="info">
+            <img src="./img/close-icon.svg" class="close-icon-question" onclick="closePopUpQuestion()">
+            <h1 class="title-pop-up">Hi,</h1>
+            <span class="text-pop-up">
+                Es freut mich, dass du meine Seite gefunden hast. Vielleicht dient es dir als Inspirationsquelle, wo es dich als nächstes hinzieht.<br>
+                Beim Anschauen der Fotos wünsche ich dir viel Spass.<br><br>
+                Liebe Grüsse<br>
+                Pascale
+            </span>
+        </div>
+    </div>
+
+    
+</body>
+</html>
