@@ -152,7 +152,7 @@ footer {
     height:60px;
     max-width: 1440px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -171,6 +171,31 @@ footer span {
 
 .footer-link:hover {
     text-decoration: underline;
+}
+
+/* Impressum + Datenschutz */
+
+.back-arrow a {
+    color: black;
+    text-decoration: none;
+}
+
+.back-arrow {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.impressum-container,
+.datenschutz-container {
+    padding: 20px;
+}
+
+.impressum-container h1 {
+    margin-top: 0;
+}
+
+.impressum-container li a {
+    color: black;
 }
 
 /* Pop-up PhotoBig */
@@ -444,10 +469,6 @@ footer span {
         margin-left: 10px;
         margin-right: 10px;
     }
-
-    footer span {
-        padding-left: 20px;
-    }
     
     .impressum-datenschutz-container {
         padding-right: 20px;
@@ -457,6 +478,10 @@ footer span {
         height: 250px;
         width: 200px;
         padding: 8px;
+    }
+
+    .title-privacy-policy {
+        font-size: 22px;
     }
     
 }
